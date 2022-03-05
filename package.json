@@ -1,0 +1,64 @@
+{
+  "name": "pccshell",
+  "version": "1.0.1",
+  "main": "dist/main/index.js",
+  "author": "wanghl16",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.17.0"
+  },
+  "scripts": {
+    "dev": "node scripts/watch.mjs",
+    "build": "vue-tsc --noEmit && node scripts/build.mjs && electron-builder"
+  },
+  "dependencies": {
+    "electron-ssh2": "^0.1.2",
+    "electron-store": "^8.0.1",
+    "ssh2-sftp-client": "^7.2.2"
+  },
+  "devDependencies": {
+    "@element-plus/icons-vue": "^0.2.6",
+    "@types/serialport": "^8.0.2",
+    "@types/sqlite3": "^3.1.8",
+    "@vitejs/plugin-vue": "^2.0.1",
+    "axios": "^0.25.0",
+    "codemirror-editor-vue3": "^1.0.1",
+    "electron": "16.0.2",
+    "electron-builder": "^22.14.5",
+    "element-plus": "^1.3.0-beta.9",
+    "hex-to-rgba": "^2.0.1",
+    "iconv-lite": "^0.6.3",
+    "jquery": "^3.6.0",
+    "sass": "^1.38.0",
+    "sass-loader": "^10.0.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.12",
+    "vite-plugin-electron-renderer": "^0.1.4",
+    "vue": "^3.2.26",
+    "vue-router": "^4.0.12",
+    "vue-tsc": "^0.30.2",
+    "vue3-ace-editor": "^2.2.2",
+    "vue3-code-editor": "0.0.12",
+    "vuex": "^4.0.2",
+    "xterm": "^4.17.0",
+    "xterm-addon-attach": "^0.6.0",
+    "xterm-addon-fit": "^0.5.0",
+    "xterm-addon-webgl": "^0.11.4",
+    "xterm-theme": "^1.1.0",
+    "zip-local": "^0.3.5"
+  },
+  "env": {
+    "//": "Used in build scripts",
+    "HOST": "127.0.0.1",
+    "PORT": 5555
+  },
+  "description": "![GitHub license](https://img.shields.io/github/license/caoxiemeihao/electron-vite-boilerplate?style=flat) ![GitHub stars](https://img.shields.io/github/stars/caoxiemeihao/electron-vite-boilerplate?color=fa6470&style=flat)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadik-w/electron-vite-vue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sadik-w/electron-vite-vue/issues"
+  },
+  "homepage": "https://github.com/sadik-w/electron-vite-vue#readme"
+}
